@@ -6,12 +6,10 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./currency-header.component.scss']
 })
 export class CurrencyHeaderComponent implements OnInit {
-  public usdRateBuy: number;
-  public eurRateBuy: number;
+  public usdRateBuy: any;
+  public eurRateBuy: any;
 
   constructor(private http: HttpClient) {
-    this.usdRateBuy = 0;
-    this.eurRateBuy = 0;
   }
 
   ngOnInit(): void {
